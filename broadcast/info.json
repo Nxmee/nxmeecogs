@@ -1,0 +1,11 @@
+{
+  "author": ["Nxmee (Nxmee#9999)"],
+  "install_msg": "This cog allows you to broadcast a message to multiple different channels",
+  "name": "Broadcast",
+  "disabled": false,
+  "short": "Announce messages in multiple different channels at once",
+  "description": "Have the bot say in multiple channels",
+  "tags": ["say", "message", "announcements"],
+  "hidden": false,
+  "min_python_version": [3, 6, 0]
+}
