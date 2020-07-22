@@ -1,0 +1,12 @@
+{
+    "author": [
+        "Nxmee"
+    ],
+    "description": "Press h to a thing or user by pressing h.",
+    "install_msg": "Thanks for installing, have fun.",
+    "short": "Press h to h.",
+    "tags": [
+        "pressh"
+    ],
+    "type": "COG"
+}
