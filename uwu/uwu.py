@@ -13,14 +13,8 @@ class Uwu(commands.Cog):
     @commands.command()
     async def uwu(self, ctx, *, message: str):
         """uwuifys a message"""
-        return await ctx.send(
-            self.owo(message.lower())
-        )
-    dictionary = {'you': 'yuw', 'and': 'awnd', 'lol': 'lawl', 'is': 'ish', 'anybody': 'anybowdy', 'the':'da'}
-
-
-    def owo(self, text):
-        words = text.split()
+        dictionary = {'you': 'yuw', 'and': 'awnd', 'lol': 'lawl', 'is': 'ish', 'anybody': 'anybowdy', 'the':'da'}
+        words = message.lower().split()
         for i in range(0, len(words)): 
             word = words[i]
             if word in dictionary:
@@ -29,5 +23,6 @@ class Uwu(commands.Cog):
 
         text = text.replace('l', 'w')
         text = text.replace('r', 'w')
-
-        return text
+        return await ctx.send(
+            text
+        )
