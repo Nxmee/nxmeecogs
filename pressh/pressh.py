@@ -64,3 +64,10 @@ class PressH(commands.Cog):
             if str(reaction.emoji) == "\U0001F1ED":
                 await reaction.message.channel.send(f"**{user.name}** has h'd.")
                 self.channels[str(reaction.message.channel.id)]['reacted'].append(user.id)
+                
+    @commands.command()
+    async def h(self, ctx, *, user: discord.User = None):
+        """h"""
+        return await ctx.send(
+            "h"
+        )
