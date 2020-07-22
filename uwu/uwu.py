@@ -14,5 +14,20 @@ class Uwu(commands.Cog):
     async def uwu(self, ctx, *, message: str):
         """uwuifys a message"""
         return await ctx.send(
-            message.lower().replace('r', 'w').replace('l', 'w').replace('n', 'ny')
+            self.owo(message.lower())
         )
+    dictionary = {'you': 'yuw', 'and': 'awnd', 'lol': 'lawl', 'is': 'ish', 'anybody': 'anybowdy', 'the':'da'}
+
+
+    def owo(self, text):
+        words = text.split()
+        for i in range(0, len(words)): 
+            word = words[i]
+            if word in dictionary:
+                words[i] = dictionary[word]
+                text = ' '.join(words)
+
+        text = text.replace('l', 'w')
+        text = text.replace('r', 'w')
+
+        return text
