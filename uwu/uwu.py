@@ -19,7 +19,7 @@ class Uwu(commands.Cog):
             word = words[i]
             if word in dictionary:
                 words[i] = dictionary[word]
-                text = ' '.join(words)
+        text = ' '.join(words)
 
         text = text.replace('l', 'w')
         text = text.replace('r', 'w')
